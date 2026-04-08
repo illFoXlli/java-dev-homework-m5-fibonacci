@@ -1,0 +1,20 @@
+@startuml
+start
+
+if (n <= 1?) then (yes)
+  :return n;
+else (no)
+  :check cache;
+
+  if (value exists?) then (yes)
+    :return from cache;
+  else (no)
+    :calculate fib(n-1) + fib(n-2);
+    :save to cache;
+    :return result;
+  endif
+
+endif
+
+stop
+@enduml

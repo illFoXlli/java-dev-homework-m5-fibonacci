@@ -1,0 +1,8 @@
+@startuml
+participant FibonacciRecursive
+
+FibonacciRecursive -> FibonacciRecursive: fib(4)
+FibonacciRecursive -> FibonacciRecursive: fib(3)
+FibonacciRecursive -> FibonacciRecursive: fib(2)
+FibonacciRecursive --> FibonacciRecursive: return
+@enduml

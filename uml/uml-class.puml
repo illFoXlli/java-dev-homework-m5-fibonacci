@@ -1,0 +1,13 @@
+@startuml
+class FibonacciIterative {
+  +fib(n: int): long
+}
+
+class FibonacciRecursive {
+  +fib(n: int): long
+}
+
+class FibonacciDP {
+  +fib(n: int): long
+}
+@enduml
